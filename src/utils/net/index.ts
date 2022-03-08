@@ -19,4 +19,10 @@ const request = new Request({
   },
 })
 
-export { request }
+class Api {
+  static test() {
+    return request.get({ url: '' })
+  }
+}
+
+export { request, Api }
