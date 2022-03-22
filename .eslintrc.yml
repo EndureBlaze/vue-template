@@ -3,9 +3,10 @@ env:
   es2021: true
   node: true
 extends:
+  - eslint:recommended
   - plugin:vue/essential
-  - airbnb-base
-  - prettier
+  - plugin:@typescript-eslint/recommended
+parser: 'vue-eslint-parser'
 parserOptions:
   ecmaVersion: latest
   parser: '@typescript-eslint/parser'
@@ -13,5 +14,16 @@ parserOptions:
 plugins:
   - vue
   - '@typescript-eslint'
-  - 'plugin:prettier/recommended'
-rules: {}
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
