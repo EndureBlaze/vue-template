@@ -1,3 +1,5 @@
-<template>
-  <h1>Vue Template</h1>
-</template>
+<script setup lang="ts"></script>
+
+<template><div>Vue Template</div></template>
+
+<style lang="scss"></style>
